@@ -15,7 +15,10 @@ function submitData(UserName,UserEmail){
     .then(function(response) {
     return response.json();
   })
-    .then((res)=>document.body.innerHTML = res.id)
+    .then(function(object) {
+    console.log(object);
+    
+  })
    .catch(function(error) {
     alert("Bad things! Ragnarők!");
     console.log(error.message);
