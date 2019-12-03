@@ -16,4 +16,4 @@ function submitData(UserName,UserEmail){
     .then((res)=>document.body.innerHTML = res.id).catch((err)=>document.body.innerHTML = err.message);
 }
 
-submitData('jalal','jalal@jalal.com');
+submitData('Hanaa','hanaa.eskander95@gmail.com');
