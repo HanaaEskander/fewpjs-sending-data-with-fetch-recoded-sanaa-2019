@@ -12,8 +12,11 @@ function submitData(UserName,UserEmail){
             }
         )
     })
-    .then((jsonRes)=>jsonRes.json())
-    .then((res)=>document.body.innerHTML = res.id).catch((err)=>document.body.innerHTML = err.message);
+    .then(function(response) {
+    return response.json();
+  })
+    .then((res)=>document.body.innerHTML = res.id)
+    .catch((err)=>document.body.innerHTML = err.message);
 }
 
 submitData('Hanaa','hanaa.eskander95@gmail.com');
