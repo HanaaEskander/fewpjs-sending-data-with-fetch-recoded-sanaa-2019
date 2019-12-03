@@ -16,7 +16,11 @@ function submitData(UserName,UserEmail){
     return response.json();
   })
     .then((res)=>document.body.innerHTML = res.id)
-    .catch((err)=>document.body.innerHTML = err.message);
+   .catch(function(error) {
+    alert("Bad things! Ragnarők!");
+    console.log(error.message);
+    
+  });
 }
 
 submitData('Hanaa','hanaa.eskander95@gmail.com');
