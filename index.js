@@ -7,8 +7,8 @@ function submitData(UserName,UserEmail){
         },
         body:JSON.stringify(
             {
-                name:name,
-                email:email
+                UserName:UserName,
+                UserEmail:UserEmail
             }
         )
     })
